@@ -95,6 +95,7 @@ function displayResult() {
     resultDescription.textContent = descriptions[result];
 
     resultContainer.style.display = "block";
+    resultContainer.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 // add event listener to the results button
